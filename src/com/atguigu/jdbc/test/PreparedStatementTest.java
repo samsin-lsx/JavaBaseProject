@@ -8,10 +8,7 @@ import java.sql.SQLException;
 import java.util.Date;
 import java.util.Properties;
 
-import org.junit.Test;
-
 public class PreparedStatementTest {
-	@Test
 	public void testInsert() {
 		Connection conn = null;
 		PreparedStatement pstmt = null;

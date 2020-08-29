@@ -5,10 +5,7 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.util.Properties;
 
-import org.junit.Test;
-
 public class ConnectionTest {
-	@Test
 	public void testLoalPropertiesConnection() throws Exception {
 		InputStream is = ConnectionTest.class.getClassLoader().getResourceAsStream("jdbc.properties");
 		Properties prop = new Properties();
@@ -22,7 +19,6 @@ public class ConnectionTest {
 		System.out.println(conn);
 	}
 
-	@Test
 	public void testConnection() throws Exception {
 		String url = "jdbc:mysql://localhost:3306/test";
 		String user = "root";
